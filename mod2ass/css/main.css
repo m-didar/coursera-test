@@ -1,9 +1,85 @@
+body{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: 'Balsamiq Sans', cursive;
+	font-size: 16px;
+}
 
+*{
+	box-sizing: border-box;
+}
 
+h1{
+	font-size: 1.75em;
+}
 
-s
-s
-s
-s
-s
-s
+.container{
+	margin: 45px 20px;
+}
+
+.row{
+	margin-top: 80px;
+}
+
+.col{
+	width: 33.33%;
+	float: left;
+	padding: 0 12px;
+	text-align: left;
+}
+
+.content{
+	background-color: #959596;
+	position: relative;
+	border: 1px solid #000;
+	padding: 20px 8px 0 12px;
+}
+
+.dish_name{
+	position: absolute;
+	width: 35%;
+	border: 1px solid #000;
+	border-top: none;
+	border-right: none;
+	top: 0;
+	right: 0;
+	font-weight: 700;
+	font-size: 1.25em;
+	text-align: center;
+	height: 25px;
+}
+
+.col:nth-child(1) .dish_name{
+	background-color: #d694a7;
+}
+
+.col:nth-child(2) .dish_name{
+	background-color: #c24040;
+	color: #fff;
+}
+
+.col:nth-child(3) .dish_name{
+	background-color: #c4cc76;
+}
+
+/* Tablet Layout */
+@media (min-width: 768px) and (max-width: 991px){
+	.col-md-6{
+		width: 50%;
+		float: left;
+	}
+
+	.col-md-12{
+		width: 100%;
+		margin-top: 24px;
+	}
+}
+
+/* Mobile Layout */
+@media (max-width: 767px){
+	.col-sm-12{
+		width: 100%;
+		margin-top: 24px;
+	}
+}
